@@ -16,11 +16,9 @@ layout: default
 
 <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
     {% include header.html %}
-    <div class="wrapper">
+    <div class="wrapper body">
         {{ content }}
-
-        {% include footer.html %}
-
     </div>
+    {% include footer.html %}
 </body>
 </html>
